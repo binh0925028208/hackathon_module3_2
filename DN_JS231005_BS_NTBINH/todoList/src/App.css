@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #CB9100;
+
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+.header {
+  background-color: #CB9100;
+  width: 100vw;
+  padding: 10px 30px;
+}
+
+.todo_list_body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #282828;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.add_todo_box {
+  background-color: #424141;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #ddd;
+  width: 450px;
+  height: 130px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.add_todo_box input {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  color: #ddd;
+  font-size: 20px;
+  outline: none;
+}
+
+.add_todo_box button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  transform: translateY(130px);
+  right: 500px;
+}
+
+.todo_tiny_box {
+  height: 30px;
+}
+
+.todo_detail_box {
+  width: 290px;
+  background-color: #505050;
+  color: #ddd;
+  border-radius: 10px;
+  min-height: 80px;
+  padding: 20px;
+  position: relative;
+}
+
+.todo_detail_box button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #CB9100;
+}
+
+.todo_detail_box button:hover {
+  color: #ddd;
+}
+
+.todo_list_detail {
+  display: flex;
+  gap: 30px;
+  flex-flow: row wrap;
+}
